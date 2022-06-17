@@ -58,3 +58,6 @@ class TelegramConcept(MDApp):
         """Переключает языковую локализацию приложения."""
 
         self.lang = "ru" if self.lang == "en" else "en"
+
+
+TelegramConcept().run()
