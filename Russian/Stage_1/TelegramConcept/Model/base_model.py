@@ -1,4 +1,10 @@
 class BaseScreenModel:
+    """
+    Реализует базовый класс модели для всех экранов (представлений) приложения.
+    """
+
+    _observers = []  # список наблюдателей (объектов представлений)
+
     def __init__(self, database=None):
         self.database = database
 
