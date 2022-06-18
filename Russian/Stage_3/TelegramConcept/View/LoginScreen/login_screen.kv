@@ -1,0 +1,42 @@
+<LoginScreenView>
+
+    MDBoxLayout:
+        orientation: "vertical"
+        adaptive_height: True
+        size_hint_x: 0.5
+        size_hint_min_x: "240dp"
+        pos_hint: {"center_x": 0.5, "center_y": 0.5}
+        radius: 24
+        spacing: "12dp"
+        padding: "24dp"
+        md_bg_color: root.theme_cls.bg_darkest
+
+        FitImage:
+            source: "avatar.png"  # укажите путь к изображению на вашем компьютере
+            size_hint: None, None
+            size: "120dp", "120dp"
+            pos_hint: {"center_x": 0.5}
+
+        MDTextField:
+            mode: "rectangle"
+            hint_text: "Login"
+            size_hint_x: 0.8
+            pos_hint: {"center_x": 0.5}
+
+        MDTextField:
+            mode: "rectangle"
+            hint_text: "Password"
+            size_hint_x: 0.8
+            pos_hint: {"center_x": 0.5}
+
+        MDBoxLayout:
+            adaptive_size: True
+            spacing: "12dp"
+            padding: (0, "24dp", 0, 0)
+            pos_hint: {"center_x": 0.5}
+
+            MDRaisedButton:
+                text: "LOGIN"
+
+            MDRaisedButton:
+                text: "PASSWORD"
